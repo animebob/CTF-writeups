@@ -49,6 +49,6 @@ The site is at https://cfta-wm03.allyourbases.co/.
 
 ![image](https://user-images.githubusercontent.com/24442064/113930440-23727100-97a6-11eb-837d-0f28a5c30333.png)
 
-9. After a while we get **15896119** as a possible password
+9. After a while we get **15896119** as a possible password and we enter it to get the flag
 
 ![image](https://user-images.githubusercontent.com/24442064/113930163-cb3b6f00-97a5-11eb-9248-15f86731d3a8.png)
