@@ -47,24 +47,7 @@ The site is at https://cfta-wm03.allyourbases.co/.
 7. Now the issue is find a password that will result in a salted hash with the format 0e and a bunch of numbers.
 8. We make a quick python script to iterate through numbers until it finds a hash that meets the conditions:
 
-import hashlib
-for i in range (0,1000000000000):
-  key_string = str(i)
-  salt = "e361bfc569ba48dc"
-  hash = hashlib.md5( (salt + key_string).encode('utf-8') ).hexdigest()
-  if (hash[0] == "0"):
-    if(hash[1] == "e"):
-      q = 2
-      number = True
-      while(q<len(hash)):
-        if(hash[q] != "1" and hash[q] != "2" and hash[q] != "3" and hash[q] != "4" and hash[q] != "5" and hash[q] != "6" and hash[q] != "7"and hash[q] != "8" and hash[q] != "9" and hash[q] != "0"):
-          number = False
-        if(number == False):
-          break;
-        if(q == len(hash)-1):
-          print(key_string)
-        q+=1
-print("done")
+![image](https://user-images.githubusercontent.com/24442064/113930440-23727100-97a6-11eb-837d-0f28a5c30333.png)
 
 9. After a while we get **15896119** as a possible password
 
